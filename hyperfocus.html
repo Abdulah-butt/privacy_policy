@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperfocus - Privacy Policy & Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1em;
+        }
+        
+        .tabs {
+            display: flex;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px 15px 0 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: none;
+            overflow: hidden;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 20px;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tab:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        .tab.active {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 0 0 15px 15px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: none;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            color: #4a5568;
+            margin: 30px 0 15px 0;
+            font-size: 1.5em;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #2d3748;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #667eea20 0%, #764ba220 100%);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+        
+        .contact-info {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e2e8f0;
+            margin: 20px 0;
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: #718096;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .tab:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 Hyperfocus</h1>
+            <p>ADHD-Focused Music App for Enhanced Concentration</p>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('privacy')">Privacy Policy</button>
+            <button class="tab" onclick="switchTab('terms')">Terms & Conditions</button>
+        </div>
+        
+        <div class="content">
+            <!-- Privacy Policy Tab -->
+            <div id="privacy" class="tab-content active">
+                <h2>Privacy Policy</h2>
+                
+                <div class="highlight">
+                    <strong>Effective Date:</strong> September 10, 2025<br>
+                    <strong>Last Updated:</strong> September 10, 2025
+                </div>
+                
+                <p>This Privacy Policy describes how Hyperfocus ("we," "our," or "us") collects, uses, and shares your personal information when you use our mobile application (the "App"). We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
+                
+                <h3>1. Information We Collect</h3>
+                
+                <h3>1.1 Information You Provide</h3>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address, username, and password when you create an account</li>
+                    <li><strong>Profile Information:</strong> Optional information such as age range, ADHD diagnosis status, and music preferences</li>
+                    <li><strong>Subscription Information:</strong> Payment details processed through App Store/Google Play for premium subscriptions</li>
+                    <li><strong>Communication:</strong> Messages you send us through support channels or feedback forms</li>
+                </ul>
+                
+                <h3>1.2 Information Automatically Collected</h3>
+                <ul>
+                    <li><strong>Usage Data:</strong> App interactions, session duration, features used, music played, and listening preferences</li>
+                    <li><strong>Device Information:</strong> Device type, operating system, app version, and unique device identifiers</li>
+                    <li><strong>Audio Preferences:</strong> Music categories listened to, session lengths, and frequency of use</li>
+                    <li><strong>Technical Data:</strong> IP address, crash reports, and performance analytics</li>
+                </ul>
+                
+                <h3>1.3 Health Information</h3>
+                <p>We may collect information about your ADHD management and focus sessions only if you voluntarily provide it. This information is treated with the highest level of privacy protection and is used solely to improve your app experience.</p>
+                
+                <h3>2. How We Use Your Information</h3>
+                <ul>
+                    <li><strong>Service Provision:</strong> To provide, maintain, and improve the App's functionality</li>
+                    <li><strong>Personalization:</strong> To customize music recommendations and focus sessions based on your preferences</li>
+                    <li><strong>Account Management:</strong> To manage your account, subscriptions, and premium features</li>
+                    <li><strong>Communication:</strong> To respond to your inquiries, provide customer support, and send important updates</li>
+                    <li><strong>Analytics:</strong> To understand app usage patterns and improve user experience</li>
+                    <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
+                </ul>
+                
+                <h3>3. Information Sharing</h3>
+                <p>We do not sell, rent, or trade your personal information. We may share information only in the following circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With trusted third-party services that help us operate the App (analytics, cloud storage, customer support)</li>
+                    <li><strong>Legal Requirements:</strong> When required by law, court order, or to protect our rights and safety</li>
+                    <li><strong>Business Transfer:</strong> In the event of a merger, acquisition, or sale of assets</li>
+                    <li><strong>Consent:</strong> With your explicit consent for specific purposes</li>
+                </ul>
+                
+                <h3>4. Data Security</h3>
+                <p>We implement industry-standard security measures to protect your personal information, including:</p>
+                <ul>
+                    <li>Encryption of data in transit and at rest</li>
+                    <li>Secure servers and databases</li>
+                    <li>Regular security audits and updates</li>
+                    <li>Limited access to personal information by authorized personnel only</li>
+                </ul>
+                
+                <h3>5. Your Rights and Choices</h3>
+                <ul>
+                    <li><strong>Access:</strong> Request access to your personal information</li>
+                    <li><strong>Update:</strong> Correct or update your account information</li>
+                    <li><strong>Delete:</strong> Request deletion of your account and associated data</li>
+                    <li><strong>Opt-out:</strong> Unsubscribe from promotional communications</li>
+                    <li><strong>Data Portability:</strong> Request a copy of your data in a portable format</li>
+                </ul>
+                
+                <h3>6. Children's Privacy</h3>
+                <p>Our App is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us immediately.</p>
+                
+                <h3>7. Third-Party Services</h3>
+                <p>Our App may integrate with third-party services including:</p>
+                <ul>
+                    <li>Apple App Store / Google Play Store for payments</li>
+                    <li>Analytics providers (Firebase, etc.)</li>
+                    <li>Cloud storage services</li>
+                </ul>
+                <p>These services have their own privacy policies, and we encourage you to review them.</p>
+                
+                <h3>8. International Data Transfers</h3>
+                <p>Your information may be processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data during international transfers.</p>
+                
+                <h3>9. Data Retention</h3>
+                <p>We retain your information for as long as necessary to provide our services, comply with legal obligations, and resolve disputes. You may request deletion of your account at any time.</p>
+                
+                <div class="contact-info">
+                    <h3>10. Contact Us</h3>
+                    <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
+                    <p><strong>Email:</strong> privacy@hyperfocusapp.com<br>
+                    <strong>Address:</strong> [Your Company Address]<br>
+                    <strong>Website:</strong> www.hyperfocusapp.com</p>
+                </div>
+                
+                <h3>11. Changes to This Policy</h3>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy in the App and updating the "Last Updated" date.</p>
+            </div>
+            
+            <!-- Terms & Conditions Tab -->
+            <div id="terms" class="tab-content">
+                <h2>Terms and Conditions</h2>
+                
+                <div class="highlight">
+                    <strong>Effective Date:</strong> September 10, 2025<br>
+                    <strong>Last Updated:</strong> September 10, 2025
+                </div>
+                
+                <p>These Terms and Conditions ("Terms") govern your use of the Hyperfocus mobile application ("App") operated by [Your Company Name] ("we," "us," or "our"). By downloading, installing, or using our App, you agree to be bound by these Terms.</p>
+                
+                <h3>1. Acceptance of Terms</h3>
+                <p>By accessing or using Hyperfocus, you confirm that you accept these Terms and that you agree to comply with them. If you do not agree to these Terms, you must not use our App.</p>
+                
+                <h3>2. Description of Service</h3>
+                <p>Hyperfocus is a mobile application designed to help individuals with ADHD improve their focus and concentration through specially curated, colorful, and mind-relaxing music. The App offers both free and premium features through subscription plans.</p>
+                
+                <h3>3. Eligibility</h3>
+                <ul>
+                    <li>You must be at least 13 years old to use this App</li>
+                    <li>Users under 18 must have parental consent</li>
+                    <li>You must provide accurate and current information during registration</li>
+                    <li>You are responsible for maintaining the confidentiality of your account credentials</li>
+                </ul>
+                
+                <h3>4. User Account</h3>
+                <ul>
+                    <li>You are responsible for maintaining the security of your account</li>
+                    <li>You must notify us immediately of any unauthorized use of your account</li>
+                    <li>We reserve the right to suspend or terminate accounts that violate these Terms</li>
+                    <li>You may delete your account at any time through the App settings</li>
+                </ul>
+                
+                <h3>5. Subscription Services</h3>
+                
+                <h3>5.1 Subscription Plans</h3>
+                <ul>
+                    <li><strong>Monthly Subscription:</strong> Provides access to premium features for one month</li>
+                    <li><strong>Annual Subscription:</strong> Provides access to premium features for one year at a discounted rate</li>
+                </ul>
+                
+                <h3>5.2 Premium Features</h3>
+                <p>Premium subscriptions include:</p>
+                <ul>
+                    <li>Unlimited access to all music collections</li>
+                    <li>Ad-free experience</li>
+                    <li>Advanced customization options</li>
+                    <li>Exclusive focus-enhancing audio tracks</li>
+                    <li>Progress tracking and analytics</li>
+                    <li>Priority customer support</li>
+                </ul>
+                
+                <h3>5.3 Billing and Payment</h3>
+                <ul>
+                    <li>Subscriptions are billed through your App Store (Apple App Store or Google Play Store) account</li>
+                    <li>Subscriptions automatically renew unless cancelled at least 24 hours before the current period ends</li>
+                    <li>You can manage and cancel your subscription through your App Store account settings</li>
+                    <li>Refunds are subject to App Store policies</li>
+                </ul>
+                
+                <h3>5.4 Free Trial</h3>
+                <p>We may offer free trials for premium features. Free trial periods will be clearly disclosed before you subscribe. You may cancel during the trial period to avoid charges.</p>
+                
+                <h3>6. Acceptable Use</h3>
+                <p>You agree to use the App only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+                <ul>
+                    <li>Use the App for any unlawful purpose or in violation of any applicable laws</li>
+                    <li>Attempt to gain unauthorized access to our systems or other users' accounts</li>
+                    <li>Reverse engineer, decompile, or disassemble the App</li>
+                    <li>Remove or alter any copyright, trademark, or other proprietary notices</li>
+                    <li>Upload or transmit viruses, malware, or other harmful code</li>
+                    <li>Interfere with or disrupt the App's functionality</li>
+                </ul>
+                
+                <h3>7. Intellectual Property</h3>
+                <ul>
+                    <li>The App and all content, including music, graphics, and text, are owned by us or our licensors</li>
+                    <li>You are granted a limited, non-exclusive, non-transferable license to use the App</li>
+                    <li>You may not reproduce, distribute, modify, or create derivative works of our content</li>
+                    <li>All music and audio content is licensed for personal, non-commercial use only</li>
+                </ul>
+                
+                <h3>8. Medical Disclaimer</h3>
+                <div class="highlight">
+                    <p><strong>Important:</strong> Hyperfocus is designed as a wellness tool and is not intended to diagnose, treat, cure, or prevent ADHD or any other medical condition. The App should not replace professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare providers regarding ADHD management and treatment options.</p>
+                </div>
+                
+                <h3>9. Privacy</h3>
+                <p>Your privacy is important to us. Please review our Privacy Policy, which explains how we collect, use, and protect your information when you use our App.</p>
+                
+                <h3>10. Disclaimers</h3>
+                <ul>
+                    <li>The App is provided "as is" without warranties of any kind</li>
+                    <li>We do not guarantee that the App will be uninterrupted, secure, or error-free</li>
+                    <li>We are not responsible for the effectiveness of the App for managing ADHD symptoms</li>
+                    <li>Individual results may vary, and we make no guarantees about specific outcomes</li>
+                </ul>
+                
+                <h3>11. Limitation of Liability</h3>
+                <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, arising from your use of the App.</p>
+                
+                <h3>12. Indemnification</h3>
+                <p>You agree to indemnify and hold us harmless from any claims, damages, or expenses arising from your use of the App or violation of these Terms.</p>
+                
+                <h3>13. Termination</h3>
+                <ul>
+                    <li>We may terminate or suspend your access to the App at any time for violations of these Terms</li>
+                    <li>You may terminate your account at any time by contacting us or using in-app settings</li>
+                    <li>Upon termination, your right to use the App will cease immediately</li>
+                    <li>Subscription fees are non-refundable except as required by law</li>
+                </ul>
+                
+                <h3>14. Updates and Changes</h3>
+                <ul>
+                    <li>We may update the App and these Terms from time to time</li>
+                    <li>Continued use of the App after changes constitutes acceptance of new Terms</li>
+                    <li>We will notify you of material changes through the App or by email</li>
+                </ul>
+                
+                <h3>15. Governing Law</h3>
+                <p>These Terms are governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to conflict of law principles.</p>
+                
+                <h3>16. Dispute Resolution</h3>
+                <p>Any disputes arising from these Terms or your use of the App will be resolved through binding arbitration in accordance with the rules of [Arbitration Organization] in [Your Jurisdiction].</p>
+                
+                <h3>17. Severability</h3>
+                <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full force and effect.</p>
+                
+                <div class="contact-info">
+                    <h3>18. Contact Information</h3>
+                    <p>For questions about these Terms or the App, please contact us:</p>
+                    <p><strong>Email:</strong> support@hyperfocusapp.com<br>
+                    <strong>Legal:</strong> legal@hyperfocusapp.com<br>
+                    <strong>Address:</strong> [Your Company Address]<br>
+                    <strong>Website:</strong> www.hyperfocusapp.com</p>
+                </div>
+                
+                <h3>19. Acknowledgment</h3>
+                <p>By using Hyperfocus, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+            </div>
+            
+            <div class="last-updated">
+                Last Updated: September 10, 2025 | Hyperfocus App | Version 1.0
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function switchTab(tabName) {
+            // Remove active class from all tabs and content
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding content
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+        
+        // Smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add some interactive feedback
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('mouseover', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.transform = 'translateY(-2px)';
+                }
+            });
+            
+            tab.addEventListener('mouseout', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
